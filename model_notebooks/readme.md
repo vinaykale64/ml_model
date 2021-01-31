@@ -5,10 +5,26 @@ Step 1:
 
 Step 2:
 
-- Create a conda environment with python 3.7 
+- Create a conda environment with python 3.7 (for ex. if `myenv` is the environment name)
+``` bash
+conda create -n myenv python=3.6 -y
+```
+
 - Activate the environment
+``` bash
+source activate myenv
+```
+
 - pip install the libraries from `requirments.txt` file
-- Usiing ipykernel, add a jupyter notebook kernel based on the conda environment
+``` bash
+pip install -r requirements.txt
+```
+- Using ipykernel, add a jupyter notebook kernel based on the conda environment using following command:
+
+``` bash
+
+python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
+```
 
 Step 3:
 
